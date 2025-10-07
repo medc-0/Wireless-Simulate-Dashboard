@@ -1,0 +1,58 @@
+{
+  "name": "dashboard-main",
+  "version": "1.0.0",
+  "description": "A large React + TypeScript dashboard with TailwindCSS v3",
+  "type": "module",
+  "private": true,
+  "main": "desktop/build/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --strictPort --port 5173",
+    "dev:desktop": "cross-env BUILD_TARGET=desktop npm run build && tsc -p desktop/tsconfig.json && node scripts/cjsify-electron.mjs && electron .",
+    "build:desktop": "cross-env BUILD_TARGET=desktop vite build && tsc -p desktop/tsconfig.json && node scripts/cjsify-electron.mjs && electron-builder -c electron-builder.yml"
+  },
+  "keywords": [
+    "dashboard",
+    "react",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^38.2.1",
+    "electron-builder": "^26.0.12",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vite-tsconfig-paths": "^5.1.4",
+    "wait-on": "^9.0.1"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@tanstack/react-query": "^5.90.2",
+    "@tanstack/react-table": "^8.21.3",
+    "@tanstack/react-virtual": "^3.13.12",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.545.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hook-form": "^7.64.0",
+    "react-router-dom": "^7.9.3",
+    "recharts": "^3.2.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.12",
+    "zustand": "^5.0.8"
+  }
+}

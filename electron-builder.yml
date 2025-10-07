@@ -1,0 +1,21 @@
+appId: com.example.dashboard
+productName: Dashboard
+files:
+  - dist/**
+  - desktop/build/**
+directories:
+  output: release
+win:
+  target:
+    - nsis
+  icon: public/favicon.ico
+nsis:
+  oneClick: true
+  perMachine: false
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+extraMetadata:
+  main: desktop/build/main.cjs
+
+
