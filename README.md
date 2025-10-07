@@ -17,7 +17,6 @@ Modern, black UI dashboard for wireless simulation data. Built with React, TypeS
 - **Charts** powered by `recharts`
 
 ### Screenshots
-> Replace the image files with your own screenshots to showcase the app.
 
 ![Dashboard Overview](public/screenshots/dashboard.png)
 ![Analytics](public/screenshots/analytics.png)
