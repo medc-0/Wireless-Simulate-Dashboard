@@ -27,10 +27,10 @@ export function Dashboard() {
 	return (
 		<div className="space-y-6">
 			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-				<StatCard title="Revenue" value="$124,920" icon={DollarSign} />
-				<StatCard title="Active Users" value="8,421" icon={Users} />
-				<StatCard title="New Orders" value="1,204" icon={Package} />
-				<StatCard title="Sessions" value="32,901" icon={BarChart2} />
+				<StatCard title="Revenue" value="$131,478" icon={DollarSign} />
+				<StatCard title="Active Users" value="23,154" icon={Users} />
+				<StatCard title="New Orders" value="3,506" icon={Package} />
+				<StatCard title="Sessions" value="36,302" icon={BarChart2} />
 			</div>
 
 			<div className="rounded-xl ring-1 ring-white/10 bg-white/[0.04] p-4">
